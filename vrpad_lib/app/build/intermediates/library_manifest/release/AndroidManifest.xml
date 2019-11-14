@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pvr.vrpad"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.pvr.vrpad.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+        <activity
+            android:name="com.pvr.vrpad.AppActivity"
+            android:configChanges="keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="pvr.app.type"
+                android:value="2d" />
+        </activity>
+        <!-- pico sdk config start -->
+        <meta-data
+            android:name="pvr.app.type"
+            android:value="vr" />
+        <meta-data
+            android:name="pvr.display.orientation"
+            android:value="180" />
+        <meta-data
+            android:name="platform_logo"
+            android:value="1" />
+        <meta-data
+            android:name="LoadingContent"
+            android:resource="@string/loading" />
+        <meta-data
+            android:name="loadingcolor"
+            android:resource="@color/custom" />
+        <meta-data
+            android:name="loadingtextsize"
+            android:value="16" />
+        <meta-data
+            android:name="loadingwidth"
+            android:value="500" />
+        <meta-data
+            android:name="loadingheight"
+            android:value="100" />
+        <meta-data
+            android:name="loadingmarquee"
+            android:value="1" />
+        <meta-data
+            android:name="bottommargin"
+            android:value="100" />
+        <meta-data
+            android:name="marqueecount"
+            android:value="10" />
+        <meta-data
+            android:name="loadingalign"
+            android:value="left" />
+        <meta-data
+            android:name="platform_high"
+            android:value="1" />
+        <meta-data
+            android:name="platform_sbf"
+            android:value="1" />
+        <meta-data
+            android:name="com.pvr.hmd.trackingmode"
+            android:value="3dof" />
+        <meta-data
+            android:name="isPUI"
+            android:value="1" />
+        <meta-data
+            android:name="shell_mode"
+            android:value="1" />
+        <meta-data
+            android:name="enable_boundary"
+            android:value="1" />
+
+        <service android:name="com.psmart.link.spp.LarkConnectService" />
+        <service android:name="com.psmart.link.ble.BluetoothLeService" />
+        <service android:name="com.picovr.hummingbirdsvc.AutoConnectService" >
+            <intent-filter>
+                <action android:name="com.picovr.hummingbirdsvc.AutoConnectService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.picovr.picovrlib.hummingbird.HummingBirdControllerService"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.picovr.picovrlib.humingbird.HumingBirdAIDLService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.psmart.vrlib.NotificationMonitorService"
+            android:label="NotificationMonitor"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+        <!-- pico sdk config end -->
+        <!-- vierwe sdk config start -->
+        <meta-data
+            android:name="com.softwinner.vr.mode"
+            android:value="vr" />
+        <meta-data
+            android:name="MSAA"
+            android:value="2" />
+
+        <service
+            android:name="com.aw.vrsdk.VrListener"
+            android:permission="android.permission.BIND_VR_LISTENER_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.vr.VrListenerService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

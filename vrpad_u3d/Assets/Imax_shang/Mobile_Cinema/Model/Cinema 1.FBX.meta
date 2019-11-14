@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 33916537084199845a9f62d77d5a5cbf
+timeCreated: 1513280673
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: 1 row
+    100002: 10 row
+    100004: 2 row
+    100006: 3 row
+    100008: 4 row
+    100010: 5 row
+    100012: 6 row
+    100014: 7 row
+    100016: 8 row
+    100018: 9 row
+    100020: //RootNode
+    100022: Cloth
+    100024: display
+    100026: Exit_light
+    100028: floor2
+    100030: Glow_stairs
+    100032: lamps
+    100034: machine
+    100036: metal
+    100038: roof2
+    100040: Roof_Doors
+    100042: room
+    100044: room_normal
+    100046: Walls2
+    100048: Walls_Floor
+    400000: 1 row
+    400002: 10 row
+    400004: 2 row
+    400006: 3 row
+    400008: 4 row
+    400010: 5 row
+    400012: 6 row
+    400014: 7 row
+    400016: 8 row
+    400018: 9 row
+    400020: //RootNode
+    400022: Cloth
+    400024: display
+    400026: Exit_light
+    400028: floor2
+    400030: Glow_stairs
+    400032: lamps
+    400034: machine
+    400036: metal
+    400038: roof2
+    400040: Roof_Doors
+    400042: room
+    400044: room_normal
+    400046: Walls2
+    400048: Walls_Floor
+    2300000: 1 row
+    2300002: 10 row
+    2300004: 2 row
+    2300006: 3 row
+    2300008: 4 row
+    2300010: 5 row
+    2300012: 6 row
+    2300014: 7 row
+    2300016: 8 row
+    2300018: 9 row
+    2300020: Cloth
+    2300022: display
+    2300024: Exit_light
+    2300026: floor2
+    2300028: Glow_stairs
+    2300030: lamps
+    2300032: machine
+    2300034: metal
+    2300036: roof2
+    2300038: Roof_Doors
+    2300040: room
+    2300042: room_normal
+    2300044: Walls2
+    2300046: Walls_Floor
+    3300000: 1 row
+    3300002: 10 row
+    3300004: 2 row
+    3300006: 3 row
+    3300008: 4 row
+    3300010: 5 row
+    3300012: 6 row
+    3300014: 7 row
+    3300016: 8 row
+    3300018: 9 row
+    3300020: Cloth
+    3300022: display
+    3300024: Exit_light
+    3300026: floor2
+    3300028: Glow_stairs
+    3300030: lamps
+    3300032: machine
+    3300034: metal
+    3300036: roof2
+    3300038: Roof_Doors
+    3300040: room
+    3300042: room_normal
+    3300044: Walls2
+    3300046: Walls_Floor
+    4300000: Glow_stairs
+    4300002: display
+    4300004: metal
+    4300006: Exit_light
+    4300008: lamps
+    4300010: 3 row
+    4300012: room
+    4300014: machine
+    4300016: 2 row
+    4300018: room_normal
+    4300020: 1 row
+    4300022: roof2
+    4300024: Cloth
+    4300026: 10 row
+    4300028: 5 row
+    4300030: 6 row
+    4300032: 7 row
+    4300034: 8 row
+    4300036: 9 row
+    4300038: 4 row
+    4300040: Walls2
+    4300042: Roof_Doors
+    4300044: floor2
+    4300046: Walls_Floor
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

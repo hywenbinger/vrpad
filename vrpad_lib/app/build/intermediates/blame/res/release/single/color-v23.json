@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\android\\workspace_as\\vrpad_lib\\app\\build\\intermediates\\res\\merged\\release\\color-v23\\abc_tint_switch_track.xml",
+        "source": "D:\\android\\.gradle\\caches\\transforms-2\\files-2.1\\751db7a1318b05819337e0f8a3319510\\appcompat-1.1.0\\res\\color-v23\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "D:\\android\\workspace_as\\vrpad_lib\\app\\build\\intermediates\\res\\merged\\release\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "D:\\android\\.gradle\\caches\\transforms-2\\files-2.1\\751db7a1318b05819337e0f8a3319510\\appcompat-1.1.0\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "D:\\android\\workspace_as\\vrpad_lib\\app\\build\\intermediates\\res\\merged\\release\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "D:\\android\\.gradle\\caches\\transforms-2\\files-2.1\\751db7a1318b05819337e0f8a3319510\\appcompat-1.1.0\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "D:\\android\\workspace_as\\vrpad_lib\\app\\build\\intermediates\\res\\merged\\release\\color-v23\\abc_tint_default.xml",
+        "source": "D:\\android\\.gradle\\caches\\transforms-2\\files-2.1\\751db7a1318b05819337e0f8a3319510\\appcompat-1.1.0\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
+        "merged": "D:\\android\\workspace_as\\vrpad_lib\\app\\build\\intermediates\\res\\merged\\release\\color-v23\\abc_tint_edittext.xml",
+        "source": "D:\\android\\.gradle\\caches\\transforms-2\\files-2.1\\751db7a1318b05819337e0f8a3319510\\appcompat-1.1.0\\res\\color-v23\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "D:\\android\\workspace_as\\vrpad_lib\\app\\build\\intermediates\\res\\merged\\release\\color-v23\\abc_color_highlight_material.xml",
+        "source": "D:\\android\\.gradle\\caches\\transforms-2\\files-2.1\\751db7a1318b05819337e0f8a3319510\\appcompat-1.1.0\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "D:\\android\\workspace_as\\vrpad_lib\\app\\build\\intermediates\\res\\merged\\release\\color-v23\\abc_tint_spinner.xml",
+        "source": "D:\\android\\.gradle\\caches\\transforms-2\\files-2.1\\751db7a1318b05819337e0f8a3319510\\appcompat-1.1.0\\res\\color-v23\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "D:\\android\\workspace_as\\vrpad_lib\\app\\build\\intermediates\\res\\merged\\release\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "D:\\android\\.gradle\\caches\\transforms-2\\files-2.1\\751db7a1318b05819337e0f8a3319510\\appcompat-1.1.0\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "D:\\android\\workspace_as\\vrpad_lib\\app\\build\\intermediates\\res\\merged\\release\\color-v23\\abc_btn_colored_text_material.xml",
+        "source": "D:\\android\\.gradle\\caches\\transforms-2\\files-2.1\\751db7a1318b05819337e0f8a3319510\\appcompat-1.1.0\\res\\color-v23\\abc_btn_colored_text_material.xml"
+    }
+]

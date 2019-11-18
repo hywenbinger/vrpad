@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="blue">#ff0000ff</color>
-    <color name="custom">#FFFFFFFF</color>
-    <color name="white">#FFFFFF</color>
-    <string name="app_name">VRPad</string>
-    <string name="loading"/>
-</resources>

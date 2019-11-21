@@ -43,8 +43,8 @@ public class Main : MonoBehaviour
 
     public void InitSurface()
     {
-        mTexture2D = new Texture2D(1080, 1920, TextureFormat.RGB24, false, false);
-        mVirtualDisplayId = mJavaObj.Call<int>("initSurface", (int)mTexture2D.GetNativeTexturePtr(), 1080, 1920, 480);
+        mTexture2D = new Texture2D(1600, 2880, TextureFormat.RGB24, false, false);
+        mVirtualDisplayId = mJavaObj.Call<int>("initSurface", (int)mTexture2D.GetNativeTexturePtr(), 1600, 2880, 560);
     }
 
     public void UpdateTexture()

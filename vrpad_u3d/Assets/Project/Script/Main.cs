@@ -9,6 +9,7 @@ public class Main : MonoBehaviour
     public MediaPlayerCtrl mPlayerCtrl;
     public RawImage mDisplayImage;
     public RectTransform mDisplayTran;
+    public Overlay mOverlay;
     public ImeManager mImeManager;
     private Texture2D mTexture2D;
     private AndroidJavaObject mJavaObj;
@@ -27,7 +28,7 @@ public class Main : MonoBehaviour
             Invoke("PlayVideo", 3.0f);
             Invoke("InitSurface", 5.0f);
         }
-        
+        mOverlay.Init();
     }
 
     // Update is called once per frame
@@ -56,6 +57,7 @@ public class Main : MonoBehaviour
             mDisplayImage.texture = mTexture2D;
             mJavaObj.Call("updateTexture");
             GL.InvalidateState();
+            mOverlay.UpdateTexture();
         }
     }
 
@@ -94,8 +96,8 @@ public class Main : MonoBehaviour
 
     private void OpenApp()
     {
-        //mJavaObj.Call("startApp", "com.tencent.mm", "com.tencent.mm.ui.LauncherUI");
         mJavaObj.Call("startApp", "com.pvr.vrpad", "com.pvr.vrpad.AppActivity");
+        //mJavaObj.Call("startApp", "com.tencent.mm", "com.tencent.mm.ui.LauncherUI");
         //mJavaObj.Call("startApp", "com.sina.weibo", "com.sina.weibo.SplashActivity");
     }
 
@@ -115,6 +117,7 @@ public class Main : MonoBehaviour
         float r = float.Parse(rotation);
         mDisplayTran.localEulerAngles = new Vector3(0.0f, 0.0f, r * 90.0f);
         mImeManager.transform.localPosition = (r == 0.0f || r == 2.0f) ? new Vector3(276.0f, -70.0f, -133.0f) : new Vector3(256.0f, -15.0f, -145.0f);
+        mOverlay.OverlayChanged(rotation);
     }
 
     public void Back()

@@ -33,7 +33,7 @@ dependencies {
 
 task createDebugJar(type: Copy) {
     delete 'build/lib/vrpad_lib-debug.jar'
-    from('build/intermediates/aar_main_jar/debug/')
+    from('build/intermediates/intermediate-jars/debug/')
     into('build/lib/')
     include('classes.jar')
     rename('classes.jar', 'vrpad_lib-debug.jar')

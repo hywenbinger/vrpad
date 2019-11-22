@@ -35,6 +35,14 @@ public class Main : MonoBehaviour
     void Update()
     {
         UpdateTexture();
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            SetDisplayRotation("0");
+        }
+        else if (Input.GetKeyUp(KeyCode.S))
+        {
+            SetDisplayRotation("1");
+        }
     }
 
     private void PlayVideo()

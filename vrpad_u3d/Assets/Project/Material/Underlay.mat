@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Underlay
-  m_Shader: {fileID: 4800000, guid: 091a91d0c69278b4382b84a5438628b0, type: 3}
+  m_Shader: {fileID: 4800000, guid: f7ebf27d0166a4c49a5ffc6f313cf660, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

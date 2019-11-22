@@ -12,7 +12,7 @@ public class Overlay : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        Init();
     }
 
     // Update is called once per frame
@@ -21,6 +21,8 @@ public class Overlay : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.JoystickButton0))
         {
             //SaveImage(m_RtCamrea.targetTexture);
+            Debug.Log(m_RtCamrea.targetTexture.width+"---"+m_RtCamrea.targetTexture.height+"---"+m_RtCamrea.orthographicSize);
+            //UpdateTexture();
         }
     }
 
@@ -74,7 +76,7 @@ public class Overlay : MonoBehaviour
         else
         {
             m_RtCamrea.orthographicSize = 1.35f;
-            m_overlay.transform.localScale = new Vector3(500f, 900f, 1f);
+            m_overlay.transform.localScale = new Vector3(1600f, 900f, 1f);
             m_holeTran.transform.localScale = m_overlay.transform.localScale;
         }
         ChangeRT_Size(m_RtCamrea.targetTexture, is_H);
@@ -89,6 +91,10 @@ public class Overlay : MonoBehaviour
         rt.Release();
         rt.width = is_H ? 2880 : 1600;
         rt.height = is_H ? 1600 : 2880;
+        rt.useMipMap = true;
+        rt.autoGenerateMips = true;
+        rt.filterMode = FilterMode.Trilinear;
+        rt.mipMapBias = -0.7f;
         rt.Create();
     }
 

@@ -7,6 +7,7 @@ public class Main : MonoBehaviour
 {
 
     public MediaPlayerCtrl mPlayerCtrl;
+    public GameObject mDisplayObj;
     public RawImage mDisplayImage;
     public RectTransform mDisplayTran;
     public Overlay mOverlay;
@@ -22,6 +23,7 @@ public class Main : MonoBehaviour
         InputController.GetInstance().AddListener(ListenerEventType.CANCEL, Back);
         if (Application.platform == RuntimePlatform.Android)
         {
+            mDisplayObj.SetActive(false);
             AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
             AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
             mJavaObj = new AndroidJavaObject("com.pvr.vrpad.PvrPadManager", jo);
@@ -98,7 +100,7 @@ public class Main : MonoBehaviour
         if (action.Equals("1"))
         {
             OpenApp();
-            mDisplayImage.gameObject.SetActive(true);
+            mDisplayObj.SetActive(true);
         }
     }
 

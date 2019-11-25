@@ -116,20 +116,24 @@ public class PvrPadManager {
         @Override
         public void onDisplayAdded(int displayId) {
             Utils.print("onDisplayAdded--->"+displayId);
-            UnityPlayer.UnitySendMessage(Utils.UNITY_OBJ,"OnDisplayListener", String.valueOf(1));
+            if(mVirtualDisplay != null && mVirtualDisplayId == displayId){
+                UnityPlayer.UnitySendMessage(Utils.UNITY_OBJ,"OnDisplayListener", String.valueOf(1));
+            }
         }
 
         @Override
         public void onDisplayRemoved(int displayId) {
             Utils.print("onDisplayRemoved--->"+displayId);
-            UnityPlayer.UnitySendMessage(Utils.UNITY_OBJ,"OnDisplayListener", String.valueOf(2));
+            if(mVirtualDisplay != null && mVirtualDisplayId == displayId){
+                UnityPlayer.UnitySendMessage(Utils.UNITY_OBJ,"OnDisplayListener", String.valueOf(2));
+            }
         }
 
         @Override
         public void onDisplayChanged(int displayId) {
             Utils.print("onDisplayChanged--->"+displayId);
-            UnityPlayer.UnitySendMessage(Utils.UNITY_OBJ,"OnDisplayListener", String.valueOf(3));
             if(mVirtualDisplay != null && mVirtualDisplayId == displayId){
+                UnityPlayer.UnitySendMessage(Utils.UNITY_OBJ,"OnDisplayListener", String.valueOf(3));
                 final Display display = mVirtualDisplay.getDisplay();
                 final int rotation = display.getRotation();
                 if(mRotation != rotation){

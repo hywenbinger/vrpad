@@ -274,7 +274,6 @@ GameObject:
   - component: {fileID: 264468827}
   - component: {fileID: 264468825}
   - component: {fileID: 264468826}
-  - component: {fileID: 264468828}
   m_Layer: 8
   m_Name: UI Root
   m_TagString: Untagged
@@ -393,9 +392,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mPlayerCtrl: {fileID: 264468825}
+  mDisplayObj: {fileID: 290813194}
   mDisplayImage: {fileID: 664138097}
   mDisplayTran: {fileID: 664138096}
-  mOverlay: {fileID: 264468828}
+  mOverlay: {fileID: 290813196}
   mImeManager: {fileID: 1698098081}
 --- !u!114 &264468827
 MonoBehaviour:
@@ -408,17 +408,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 711f53e8775bf76479ba063f604d289c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &264468828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 264468820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b6de4b768123f2429c4fcd029f73640, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &290813194
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +416,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 290813195}
+  - component: {fileID: 290813196}
   m_Layer: 8
   m_Name: Display
   m_TagString: Untagged
@@ -457,6 +447,17 @@ RectTransform:
   m_AnchoredPosition: {x: 255, y: 93}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &290813196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 290813194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b6de4b768123f2429c4fcd029f73640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &440709805
 Prefab:
   m_ObjectHideFlags: 0
